@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* General Styles */
 body {
     margin: 0;
@@ -13,17 +12,6 @@ body {
 .header {
     padding: 10px 20px;
     background-color: #111;
-=======
-body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
-}
-
-.header {
-    padding: 10px;
->>>>>>> eb03b49cbf3d22f3278769c82cf18c6f6624d639
 }
 
 .nav_items {
@@ -35,16 +23,11 @@ body {
 
 .nav_item {
     display: inline-block;
-<<<<<<< HEAD
     margin-left: 20px;
-=======
-    margin-left: 15px;
->>>>>>> eb03b49cbf3d22f3278769c82cf18c6f6624d639
 }
 
 .nav_link {
     text-decoration: none;
-<<<<<<< HEAD
     color: #fff;
     font-size: 18px;
     transition: color 0.3s;
@@ -55,19 +38,12 @@ body {
 }
 
 /* Intro / Hero Info */
-=======
-    color: white;
-    font-size: 20px;
-}
-
->>>>>>> eb03b49cbf3d22f3278769c82cf18c6f6624d639
 .info {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-175%, -50%);
     font-size: 20px;
-<<<<<<< HEAD
     text-align: left;
 }
 
@@ -179,107 +155,12 @@ body {
     margin-top: 60px;
     padding-bottom: 100px;
     flex-wrap: wrap;
-=======
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.red-button {
-    background-color: rgb(193, 51, 51);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.red-button a {
-    text-decoration: none; 
-    color: white; 
-}
-
-.section-container {
-    top: 100%;
-    left: 25%;
-    display: inline-block;
-    text-align: left; /* Adjusted text-align to left */
-    position: absolute;
-    font-size: 20px;
-}
-
-.image_container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Adjusted justify-content to space-between */
-    margin-top: 50px;
-    padding-bottom: 100px;
-}
-
-.image_container img {
-    max-width: 500px;
-    margin-right: 20px;
-    width: 500px;
-    height: 350px;
-}
-
-.underline-Headline {
-    border-bottom: 2px solid red;
-    padding-bottom: 0;
-}
-
-.item-List {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    padding-right: 50px;
-    text-align: left;
-}
-
-.item-List li {
-    margin-bottom: 1px;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.item-List li::before {
-    content: '\2022';
-    color: white;
-    font-size: 1.5em;
-    margin-right: 20px;
-    vertical-align: middle;
-    position: relative;
-    top: -2px;
-}
-
-.GratitudeLink {
-    color: white;
-    text-decoration: none;
-    border-bottom: 1px solid red;
-    font-weight: bold;
-}
-
-.GratitudeLink:hover {
-    color: red;
-    border-bottom: 1px solid red;
-}
-
-.about-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Adjusted justify-content to space-between */
-    margin-top: 50px;
-    padding-bottom: 100px;
->>>>>>> eb03b49cbf3d22f3278769c82cf18c6f6624d639
 }
 
 .Photo {
     border-radius: 50%;
     max-height: 400px;
     max-width: 400px;
-<<<<<<< HEAD
     height: auto;
     width: 100%;
     margin-right: 50px;
@@ -326,14 +207,4 @@ body {
     .project-details {
         text-align: center;
     }
-=======
-    height: 275px;
-    width: 340px;
-    margin-right: 50px;
-    transform: translate(-15%);
-}
-
-.about-section p {
-    max-width: 500px; /* Adjust the maximum width of the text */
->>>>>>> eb03b49cbf3d22f3278769c82cf18c6f6624d639
 }
