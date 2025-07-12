@@ -1,12 +1,17 @@
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
+/* Navigation */
 .header {
-    padding: 10px;
+    padding: 10px 20px;
+    background-color: #111;
 }
 
 .nav_items {
@@ -18,125 +23,188 @@ body {
 
 .nav_item {
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .nav_link {
     text-decoration: none;
-    color: white;
-    font-size: 20px;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
+.nav_link:hover {
+    color: #f44;
+}
+
+/* Intro / Hero Info */
 .info {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-175%, -50%);
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.red-button {
-    background-color: rgb(193, 51, 51);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.red-button a {
-    text-decoration: none; 
-    color: white; 
-}
-
-.section-container {
-    top: 100%;
-    left: 25%;
-    display: inline-block;
-    text-align: left; /* Adjusted text-align to left */
-    position: absolute;
-    font-size: 20px;
-}
-
-.image_container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Adjusted justify-content to space-between */
-    margin-top: 50px;
-    padding-bottom: 100px;
-}
-
-.image_container img {
-    max-width: 500px;
-    margin-right: 20px;
-    width: 500px;
-    height: 350px;
-}
-
-.underline-Headline {
-    border-bottom: 2px solid red;
-    padding-bottom: 0;
-}
-
-.item-List {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    padding-right: 50px;
     text-align: left;
 }
 
-.item-List li {
-    margin-bottom: 1px;
-    position: relative;
-    display: flex;
-    align-items: center;
+.red-button {
+    background-color: #c13333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
 }
 
-.item-List li::before {
-    content: '\2022';
-    color: white;
-    font-size: 1.5em;
-    margin-right: 20px;
-    vertical-align: middle;
-    position: relative;
-    top: -2px;
+.red-button:hover {
+    background-color: #a12222;
 }
 
-.GratitudeLink {
-    color: white;
+.red-button a {
     text-decoration: none;
-    border-bottom: 1px solid red;
+    color: white;
+}
+
+/* Section Container */
+.section-container {
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    display: inline-block;
+    font-size: 20px;
+    width: 70%;
+    padding-top: 100px;
+}
+
+/* Section Headings */
+.underline-Headline {
+    border-bottom: 2px solid red;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Project Listing */
+.project {
+    text-align: center;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 40px;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.project-details {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.project-details h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+/* Tech Stack Tags */
+.tech-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.tech-list li {
+    background-color: #222;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #555;
+}
+
+/* Project Links */
+.project-link, .GratitudeLink {
     font-weight: bold;
-}
-
-.GratitudeLink:hover {
-    color: red;
+    text-decoration: none;
+    color: #f44;
     border-bottom: 1px solid red;
+    transition: color 0.3s, border-color 0.3s;
 }
 
+.project-link:hover, .GratitudeLink:hover {
+    color: white;
+    border-color: white;
+}
+
+/* About Section */
 .about-section {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between; /* Adjusted justify-content to space-between */
-    margin-top: 50px;
+    justify-content: space-between;
+    margin-top: 60px;
     padding-bottom: 100px;
+    flex-wrap: wrap;
 }
 
 .Photo {
     border-radius: 50%;
     max-height: 400px;
     max-width: 400px;
-    height: 275px;
-    width: 340px;
+    height: auto;
+    width: 100%;
     margin-right: 50px;
-    transform: translate(-15%);
+    flex: 1;
 }
 
 .about-section p {
-    max-width: 500px; /* Adjust the maximum width of the text */
+    max-width: 500px;
+    flex: 2;
+}
+
+/* Contact Section */
+#contact {
+    margin-top: 60px;
+}
+
+#contact p {
+    line-height: 1.8;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+    .info {
+        transform: translate(-50%, -50%);
+        left: 50%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .section-container {
+        left: 5%;
+        width: 90%;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Photo {
+        margin: 0 auto 20px auto;
+    }
+
+    .project-details {
+        text-align: center;
+    }
 }
